@@ -1,0 +1,17 @@
+{
+  "mae": 123648,
+  "mape": 11.43,
+  "r2": 0.9029,
+  "features": [
+    "marque_enc",
+    "modele_enc",
+    "annee",
+    "age",
+    "km",
+    "km_par_an",
+    "carburant_enc",
+    "boite_enc",
+    "puissance",
+    "wilaya_enc"
+  ]
+}

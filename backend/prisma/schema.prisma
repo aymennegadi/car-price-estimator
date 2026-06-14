@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          Int          @id @default(autoincrement())
+  nom         String
+  prenom      String
+  email       String
+  createdAt   DateTime     @default(now())
+  estimations Estimation[]
+}
+
+model Estimation {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  marque      String
+  modele      String
+  annee       Int
+  km          Int
+  carburant   String
+  boite       String
+  puissance   Int
+  wilaya      String
+  prix        Int
+  prixMin     Int
+  prixMax     Int
+  confiance   Float
+  commentaire String?
+  createdAt   DateTime @default(now())
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
