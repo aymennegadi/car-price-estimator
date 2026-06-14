@@ -56,3 +56,9 @@ npm start
 cd ai-service
 python predict.py
 ```
+
+## Note on Pricing Data
+
+Car prices in this application are based on the Algerian market.
+The Renault Clio pricing has been updated to reflect real market values.
+Other brands are still using estimated base prices and will be updated progressively as market research is completed.
