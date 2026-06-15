@@ -57,6 +57,11 @@ cd ai-service
 python predict.py
 ```
 
+## 6. admin login
+just add /admin
+email : admin@estiauto.com  
+password : admin1234
+
 ## Note on Pricing Data
 
 Car prices in this application are based on the Algerian market.
