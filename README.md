@@ -33,6 +33,7 @@ python train.py
 ```bash
 cd ../backend
 npm install
+npm serveur.js
 ```
 Create a `.env` file in `/backend` :
 ```
@@ -51,13 +52,8 @@ npm install
 npm start
 ```
 
-### 5. AI API (open a new terminal)
-```bash
-cd ai-service
-python predict.py
-```
 
-## 6. admin login
+## admin login
 just add /admin
 email : admin@estiauto.com  
 password : admin1234
